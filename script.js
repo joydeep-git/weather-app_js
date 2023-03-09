@@ -71,7 +71,7 @@ const showData = (data) => {
 
         <div>
         <h3> Wind Speed</h3>
-        <p>${data.wind.speed}KM / h</p>
+        <p>${data.wind.speed} KM / h</p>
         </div>
         `
     }
