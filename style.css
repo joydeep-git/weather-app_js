@@ -27,6 +27,9 @@
     font-size: 2rem;
     color: orange;
 }
+#heading p{
+    text-align: left;
+}
 
 #search-items{
     display: flex;
