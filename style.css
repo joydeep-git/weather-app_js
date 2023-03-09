@@ -6,14 +6,10 @@
     box-sizing: border-box;
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
 }
 
-:root{
-    --first-color: #0004ff;
-    --second-color: #db6e08;
-}
-
-form{
+#form{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -24,7 +20,15 @@ form{
     gap: 0;
 }
 
-.search-items{
+#heading{
+    padding: 2rem;
+}
+#heading h1{
+    font-size: 2rem;
+    color: orange;
+}
+
+#search-items{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,59 +36,56 @@ form{
     gap: 1rem;
 }
 
-.search-bar{
+#search-bar{
     padding: 0.4rem;
     border-radius: 10px;
-    border: 1px solid black;
-    color: var(--first-color);
+    opacity: 1;
     font-weight: 600;
+    height: 1.8rem;
+    border: 1px solid black;
 }
 
-.search-icon{
-    width: 2rem;
-    padding: 0.25rem;
-    background-color: var(--second-color);
-    border: 1px solid var(--second-color);
-    border-radius: 10px;
+#search-icon{
+    height: 1.8rem;
+    padding: 0.5rem;
     cursor: pointer;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
 }
 
-/*
+#weather{
+    display: flex;
+    flex-direction: column;
+}
 
-#search-items > #search-bar + #search-icon;
-#weather > #weather-condition + #weather-details
-
-*/
-
-/* .show-details{
+#weather-condition{
+    padding: 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+#weather-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    width: 85%;
+    margin: 0 auto;
 }
 
-.image-holder img{
-    width: 6rem;
-    border: none;
-    background-color: transparent;
-}
-
-.details-holder{
+#weather-details > div{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+    padding: 1rem;
+    border-radius: 10px;
     gap: 1rem;
+    flex-direction: column;
+    background-color: #dee2e6;
+    border: 1px solid black;
 }
-
-.city-name{
-    font-size: 2rem;
-    color: var(--second-color);
-}
-
-.city-condition{
-font-size: 1.5rem;
-color: var(--first-color);
-} */

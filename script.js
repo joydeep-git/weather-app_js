@@ -44,19 +44,35 @@ const showData = (data) => {
         <h5 class="city-condition">${data.weather[0].main}</h5>`;
 
         weatherDetails.innerHTML = `
-        <h3 class="city-name">${data.name.toUpperCase()}</h3>
-        <h3 class="city-temp">${data.main.temp} ℃</h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
+        <div>
+        <h3> City</h3>
+        <p>${data.name.toUpperCase()}</p>
+        </div>
+
+        <div>
+        <h3> Temperature </h3>
+        <p>${data.main.temp} ℃</p>
+        </div>
+
+        <div>
+        <h3>Max Temp</h3>
+        <p> ${data.main.temp_max} ℃</p>
+        </div>
+
+        <div>
+        <h3> Min Temp</h3>
+        <p>${data.main.temp_min} ℃</p>
+        </div>
+
+        <div>
+        <h3> Humidity</h3>
+        <p>${data.main.humidity}</p>
+        </div>
+
+        <div>
+        <h3> Wind Speed</h3>
+        <p>${data.wind.speed}/ KM</p>
+        </div>
         `
     }
 }
